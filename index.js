@@ -14,7 +14,7 @@ let mainSwiper = new Swiper(".mainSwiper", {
   },
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
 });
@@ -51,6 +51,10 @@ let collectionSwiper = new Swiper(".collectionSwiper", {
     clickable: true,
   },
   loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".collectionSwiper .swiper-button-next",
     prevEl: ".collectionSwiper .swiper-button-prev",
