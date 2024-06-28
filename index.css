@@ -761,7 +761,7 @@ section {
     height: max-content;
   }
   .main .swiper-wrapper img {
-    /* height: 60vh; */
+    height: 90vh;
     width: 100%;
     max-width: none;
   }
