@@ -14,8 +14,9 @@
   <!------ open graph ------>
   <meta property="og:title" content="hince">
   <meta property="og:description" content="hince web renewal">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
+  <meta property="og:image" content="https://kimkimyeye.github.io/hince/assets/images/
+  image/hince-img.jpg">
+  <meta property="og:url" content="https://kimkimyeye.github.io/hince/index.html">
   <!------ reset ------>
   <link rel="stylesheet" href="./assets/styles/reset.css">
   <!------ font ------>
@@ -25,8 +26,6 @@
   <!------ global style ------>
   <!------ swiper ------>
   <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
-  <!-- 베가스 안되면 제거-->
-  <link rel="stylesheet" href="./assets/styles/vegas.min.css">
   <!------ layout: index ------>
   <link rel="stylesheet" href="./index.css">
   <!------ jQuery ------>
@@ -34,8 +33,6 @@
   <script src="./assets/scripts/jquery-ui.min.js"></script>
   <script defer src="./assets/scripts/swiper-bundle.min.js"></script>
   <script src="./index.js" defer></script>
-  <!-- 베가스 안되면 제거-->
-  <script src="./assets/scripts/vegas.min.js"></script>
 </head>
 
 <body>
@@ -49,6 +46,9 @@
 
   <!------ header ------>
   <header class="header">
+    <div class="nav-m">
+      <img src="./assets/images/icon/nav-m.svg" alt="mobile nav">
+    </div>
     <h1 class="logo"><a href="#"><img src="./assets/images/logo/logo-p.svg" alt="hince logo"></a></h1>
     <ul class="nav">
       <li><a href="#">About</a></li>
@@ -59,7 +59,8 @@
     <ul class="side-nav">
       <li><a href="#"><img src="./assets/images/icon/search-icon.svg" alt="search"></a></li>
       <li><a href="#"><img src="./assets/images/icon/user-icon.svg" alt="mypage"></a></li>
-      <li><a href="#">cart(2)</a></li>
+      <li class="cart-m"><a href="#"><img src="./assets/images/icon/cart-icon.svg" alt="cart mobile"></a></li>
+      <li class="cart-pc"><a href="#">cart(2)</a></li>
     </ul>
   </header>
 
@@ -71,7 +72,7 @@
 
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide main-box2">
+        <div class="swiper-slide main-box1">
           <div class="main-text-wrapper">
             <div class="main-text">
               <h3>Second Skin Mesh Matte cushion</h3>
@@ -85,29 +86,30 @@
         </div>
 
 
-        <div class="swiper-slide">
+        <div class="swiper-slide main-box2">
           <img src="./assets/images/image/main-img1.jpg" alt="main img1">
           <div class="main-text-wrapper">
             <div class="main-text">
-              <h3>True Dimension</h3>
-              <h3>Layering Cheek</h3>
+              <h3>True Dimension
+                <span>Layering Cheek</span>
+              </h3>
               <h4>트루 디멘션 레이어링 치크</h4>
-              <p>피부가 비칠 듯 투명한 색감으로 겹겹이 피어나는 #레이어링 치크</p>
-              <p>크림 타입과 파우더 타입 두 가지 텍스처를 레이어링해 더하는 깊이감</p>
+              <p>피부가 비칠 듯 투명한 색감으로 겹겹이 피어나는 #레이어링 치크<span> 크림 타입과 파우더 타입 두 가지 텍스처를 레이어링해 더하는 깊이감</span></p>
               <div class="solid-btn"><a href="#">GO SHOP</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide main-box3">
           <div class="main-text-wrapper">
             <div class="main-text">
-              <h3>True Dimension</h3>
-              <h3>Radiance Balm</h3>
+              <h3>True Dimension
+                <span>Radiance Balm</span>
+              </h3>
               <h4>트루 디멘션 래디언스 밤</h4>
-              <p>피부에 차오르는 글로우 광채, 원하는 부위에 손쉽게 더하는 볼륨광채스틱</p>
-              <p>본연의 광채처럼 얇게 발리어 촘촘하게 밀착되는 텍스처와 투명한 윤광 표현</p>
+              <p>피부에 차오르는 글로우 광채, 원하는 부위에 손쉽게 더하는 볼륨광채스틱<span>
+                  본연의 광채처럼 얇게 발리어 촘촘하게 밀착되는 텍스처와 투명한 윤광 표현</span></p>
               <div class="solid-btn"><a href="#">GO SHOP</a></div>
             </div>
           </div>
@@ -141,7 +143,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>트루 디멘션 레이어링 치크</p>
-            <p>29,000</p>
+            <div class="cart-wrapper">
+              <p>29,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -152,7 +157,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>세컨 스킨 글로우 쿠션</p>
-            <p>34,000</p>
+            <div class="cart-wrapper">
+              <p>34,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -163,7 +171,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>무드인핸서 쉬어 립스틱</p>
-            <p>19,000</p>
+            <div class="cart-wrapper">
+              <p>19,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -174,7 +185,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>세컨 스킨 커버 컨실러</p>
-            <p>17,000</p>
+            <div class="cart-wrapper">
+              <p>17,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -185,7 +199,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>트루 디멘션 글로우 치크</p>
-            <p>23,000</p>
+            <div class="cart-wrapper">
+              <p>23,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -195,8 +212,11 @@
             <p class="cart-btn">add to cart</p>
           </div>
           <div class="shop-text-wrapper">
-            <p>세컨 스킨 하이드레이팅 프라이머</p>
-            <p>26,000</p>
+            <p>세컨 스킨 하이드 프라이머</p>
+            <div class="cart-wrapper">
+              <p>26,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -232,7 +252,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>세컨 스킨 파운데이션</p>
-            <p>36,000</p>
+            <div class="cart-wrapper">
+              <p>36,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -243,7 +266,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>세컨 스킨 메쉬 매트 쿠션</p>
-            <p>34,000</p>
+            <div class="cart-wrapper">
+              <p>34,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -254,7 +280,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>뉴 뎁스 아이섀도우</p>
-            <p>18,000</p>
+            <div class="cart-wrapper">
+              <p>18,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -265,7 +294,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>마일드 클렌징 오일</p>
-            <p>27,000</p>
+            <div class="cart-wrapper">
+              <p>27,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -277,7 +309,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>세컨 스킨 에어리 파우더</p>
-            <p>29,000</p>
+            <div class="cart-wrapper">
+              <p>29,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -289,7 +324,10 @@
           </div>
           <div class="shop-text-wrapper">
             <p>트루 디맨션 래디언스 밤</p>
-            <p>29,000</p>
+            <div class="cart-wrapper">
+              <p>29,000</p>
+              <div class="cart-m">cart</div>
+            </div>
           </div>
         </div>
 
@@ -320,12 +358,12 @@
         <div class="text-container">
 
           <div class="text-wrapper">
-            <h3>Unveil Your</h3>
-            <h3>True Self</h3>
+            <h3>Unveil Your<span> True Self</span></h3>
             <h4>당신의 분위기, 선명하게 빛나다</h4>
-            <p>당신의 분위기를 발현시키는 무드인핸서 마뜨의 10가지 컬러와 함께</p>
-            <p>깊어지는 당신만의 고유한 분위기를 찾아보세요.</p>
-            <p>섬세한 베일 매트 텍스처로 분위기는 깊게 입술은 가볍게</p>
+            <p>당신의 분위기를 발현시키는 무드인핸서 마뜨의 10가지 컬러와 함께<span> 깊어지는 당신만의 고유한 분위기를 찾아보세요.</span>
+              <spna>섬세한 베일 매트 텍스처로 분위기는 깊게 입술은 가볍게
+              </spna>
+            </p>
             <div class="solid-btn">
               <a href="#">
                 GO SHOP
@@ -347,12 +385,12 @@
         <div class="text-container">
 
           <div class="text-wrapper">
-            <h3>Own Your</h3>
-            <h3>Moment</h3>
+            <h3>Own Your<span> Moment</span></h3>
             <h4>가장 행복했던 기억을 찾아 자유로움을 만끽하는 순간</h4>
-            <p>당신의 일상에 기분 좋은 즐거움과 설렘을 선사할 새로운</p>
-            <p>11가지 네일 폴리시, 풍부한 광택감과 다채로운 컬러 레이어링이</p>
-            <p>일상 속 즐거움을 선사합니다.</p>
+            <p>당신의 일상에 기분 좋은 즐거움과 설렘을 선사할 새로운
+              <span> 11가지 네일 폴리시, 풍부한 광택감과 다채로운 컬러 레이어링이</span>
+              <span> 일상 속 즐거움을 선사합니다.</span>
+            </p>
             <div class="solid-btn">
               <a href="#">
                 GO SHOP
@@ -368,13 +406,13 @@
         <div class="text-container">
 
           <div class="text-wrapper">
-            <h3>New Depth</h3>
-            <h3>Inside You</h3>
+            <h3>New Depth<span> Inside You</span></h3>
             <h4>한 단어로 정의할 수 없는 당신이 가진 깊이</h4>
-            <p>피부에 스미는 듯 내추럴한 음영이 당신의 선명함을</p>
-            <p>경쾌한 듯 부드러운 에너제틱 컬러로 당신의 새로운 면모를</p>
-            <p>발견하게 됩니다. 열정적인 당신에게 선사하는 영감가득한</p>
-            <p>힌스의 뉴 클래식 컬러들</p>
+            <p>피부에 스미는 듯 내추럴한 음영이 당신의 선명함을
+              <span> 경쾌한 듯 부드러운 에너제틱 컬러로 당신의 새로운 면모를</span>
+              <span> 발견하게 됩니다. 열정적인 당신에게 선사하는 영감가득한</span>
+              <span>힌스의 뉴 클래식 컬러들</span>
+            </p>
             <div class="solid-btn">
               <a href="#">
                 GO SHOP
@@ -397,12 +435,12 @@
         <div class="text-container">
 
           <div class="text-wrapper">
-            <h3>Reflection</h3>
-            <h3>Of Light</h3>
+            <h3>Reflection<span> Of Light</span></h3>
             <h4>고조되는 활기, 그리고 새로운 시작</h4>
-            <p>섬세한 열정으로 매일을 시작하고 살아가는 당신이 지닌</p>
-            <p>빛을 떠오르게 할 더 비기닝 컬렉션, 빛을 머금은 듯 선명하게</p>
-            <p>차오르는 텍스쳐로 생기롭게 반짝이는 당신의 모습을 조명해 보세요.</p>
+            <p>섬세한 열정으로 매일을 시작하고 살아가는 당신이 지닌
+              <span>빛을 떠오르게 할 더 비기닝 컬렉션, 빛을 머금은 듯 선명하게</span>
+              <span>차오르는 텍스쳐로 생기롭게 반짝이는 당신의 모습을 조명해 보세요.</span>
+            </p>
             <div class="solid-btn">
               <a href="#">
                 GO SHOP
@@ -438,7 +476,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>무드인핸서 마뜨 립스틱</p>
-          <p>19,000</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -449,7 +490,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>무드인핸서 쉬어 립스틱</p>
-          <p>19,000</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -460,7 +504,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>무드인핸서 리퀴드 글로우</p>
-          <p>19,000</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -471,7 +518,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>무드인핸서 리퀴드 마뜨</p>
-          <p>19,000</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -481,8 +531,11 @@
           <p class="cart-btn">add to cart</p>
         </div>
         <div class="shop-text-wrapper">
-          <p>무드인핸서 워터 리퀴드 글로우</p>
-          <p>19,000</p>
+          <p>무드인핸서 워터 글로우</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -493,7 +546,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>무드인핸서 립 글로우</p>
-          <p>17,000</p>
+          <div class="cart-wrapper">
+            <p>17,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -504,7 +560,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>슬림 스틱 멜팅 매트</p>
-          <p>17,000</p>
+          <div class="cart-wrapper">
+            <p>17,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -515,7 +574,10 @@
         </div>
         <div class="shop-text-wrapper">
           <p>슬림핏 리퀴드 벨벳</p>
-          <p>19,000</p>
+          <div class="cart-wrapper">
+            <p>19,000</p>
+            <div class="cart-m">cart</div>
+          </div>
         </div>
       </li>
 
@@ -572,7 +634,7 @@
 
       <div class="contact">
         <p>Contact. 1644-7161 | Fax. 02-6008-2717</p>
-        <p>Email. cs@vivawave.co.kr | Personal Information Manager. Saein Yoo</p>
+        <p>Email. cs@vivawave.co.kr <span>| Personal Information Manager. Saein Yoo</span></p>
       </div>
 
       <div class="solid-btn solid-btn-lg"><a href="#">1:1 문의하기</a></div>
