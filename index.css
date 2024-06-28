@@ -937,8 +937,20 @@ section {
     margin: 30px 0 0;
   }
   .main .swiper-pagination {
-    /* bottom: 0; */
-    display: none;
+    top: 56%;
+    /* display: none; */
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .swiper-pagination-bullet {
+    background-color: var(--color-w);
+    /* border: 1px solid var(--color-main); */
+    border: none;
+    opacity: 1;
+  }
+  .main .swiper-pagination-bullet-active {
+    background-color: var(--color-main);
   }
 
   /***** new arrivals *****/
