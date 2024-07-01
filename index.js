@@ -84,7 +84,7 @@ let collectionSwiper = new Swiper(".collectionSwiper", {
   });
 
     $('.background2').hover(function () {
-      $('.event-list').css('background-image', 'url("./assets/images/image/event-img5.jpg")');
+      $('.event-list').css('background-image', 'url("./assets/images/image/event-img2.jpg")');
     });
 
     $('.background2').mouseout(function () {
@@ -92,7 +92,7 @@ let collectionSwiper = new Swiper(".collectionSwiper", {
     });
 
     $('.background3').hover(function () {
-      $('.event-list').css('background-image', 'url("./assets/images/image/event-img2.jpg")');
+      $('.event-list').css('background-image', 'url("./assets/images/image/event-img3.jpg")');
     });
 
     $('.background3').mouseout(function () {
@@ -100,7 +100,7 @@ let collectionSwiper = new Swiper(".collectionSwiper", {
     });
 
     $('.background4').hover(function () {
-      $('.event-list').css('background-image', 'url("./assets/images/image/event-img7.jpg")');
+      $('.event-list').css('background-image', 'url("./assets/images/image/event-img4.jpg")');
     });
 
     $('.background4').mouseout(function () {
